@@ -3,7 +3,7 @@ import { Nav } from "./Nav";
 
 export function Hero() {
     return (
-        <div className="hero-cover bg-cover bg-center bg-[url('./hero-bg.jpg')] w-full h-screen text-white dark:text-white">
+        <div className="hero-cover bg-cover bg-center  w-full h-screen text-white dark:text-white" style={{ backgroundImage: `url('./hero-bg.jpg')` }}>
 
             <Nav />
             <div className="w-3/4 h-full mx-auto flex flex-col justify-center">
