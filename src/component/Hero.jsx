@@ -3,25 +3,28 @@ import { Nav } from "./Nav";
 
 export function Hero() {
     return (
-        <>
-            <div className="hero-cover bg-cover bg-[url(./hero-bg.jpg)] w-full h-dvh">
-                <Nav />
-                <div className=" m-auto  w-3/4 h-full content-center">
-                    <ul className="list-disc ml-5">
-                        <li className="uppercase text-amber-400 ">Business make easy</li>
-                    </ul>
-                    <h1 className="font-bold text-6xl w-7/12 mt-3">Reliably guiding your business to success</h1>
-                    <p className="w-5/12 mt-8">Take your business to the next level with our sales agency for bussiness idea management tools for you</p>
-                    <div className="flex gap-10 mt-7">
-                        <div>
-                            <button className="text-white bg-amber-400 w-40 uppercase h-8 rounded-sm text-sm">discover more</button>
-                        </div>
-                        <div>
-                            <a href="/" className="uppercase text-d underline " >get a quote</a>
-                        </div>
-                    </div>
+        <div className="hero-cover bg-cover bg-center bg-[url('./hero-bg.jpg')] w-full h-screen text-white dark:text-white">
+
+            <Nav />
+            <div className="w-3/4 h-full mx-auto flex flex-col justify-center">
+                <ul className="list-disc ml-5 text-amber-400 uppercase text-sm">
+                    <li>Business made easy</li>
+                </ul>
+                <h1 className="font-bold text-5xl md:text-6xl w-full md:w-7/12 mt-4 leading-tight">
+                    Reliably guiding your business to success
+                </h1>
+                <p className="w-full md:w-5/12 mt-6 text-gray-100 dark:text-gray-300">
+                    Take your business to the next level with our business idea management tools and expert sales guidance.
+                </p>
+                <div className="flex gap-6 mt-7">
+                    <button className="bg-amber-400 hover:bg-amber-500 text-white w-40 h-10 rounded-sm uppercase text-sm shadow">
+                        Discover More
+                    </button>
+                    <a href="/" className="uppercase text-sm underline hover:text-amber-400 transition-colors">
+                        Get a Quote
+                    </a>
                 </div>
             </div>
-        </>
+        </div>
     );
 }
