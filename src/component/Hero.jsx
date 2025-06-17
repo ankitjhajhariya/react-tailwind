@@ -7,7 +7,8 @@ import Testimonials from "./Testm";
 import VideoPresentation from "./VideoP";
 import NewsArticles from "./NewsArticles";
 import Footer from "./Footer";
-import AboutUs from "./AboutUs";
+import { AboutUs } from "./Aboutus";
+
 
 export function Hero() {
     const [dark, setDark] = useState(false);

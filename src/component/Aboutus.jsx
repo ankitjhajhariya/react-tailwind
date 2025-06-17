@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default function AboutUs({ mode }) {
+export function AboutUs({ mode }) {
     return (
         <section className={`${mode ? "bg-gray-900 text-white" : "bg-gray-100 text-gray-900"} py-12`}>
             <div className="w-11/12 md:w-9/12 mx-auto grid md:grid-cols-2 gap-10 items-center">
