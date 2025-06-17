@@ -22,16 +22,7 @@ export function Hero() {
                 className="hero-cover bg-cover bg-center w-full h-screen text-white dark:text-white"
                 style={{ backgroundImage: `url('./hero-bg.jpg')` }}
             >
-                {/* Pass the correct props */}
                 <Nav mode={dark} handleDarkMode={handleDarkMode} />
-
-                {/* Optional extra toggle button (not required if it's in Nav) */}
-                {/* <button
-                    onClick={handleDarkMode}
-                    className="bg-amber-400 text-white hover:bg-amber-500 w-24 h-8 rounded-sm text-xs uppercase shadow absolute top-4 right-4 z-50"
-                >
-                    {dark ? "Light" : "Dark"}
-                </button> */}
 
                 <div className="w-3/4 h-full mx-auto flex flex-col justify-center">
                     <ul className="list-disc ml-5 text-amber-400 uppercase text-sm">
@@ -54,7 +45,6 @@ export function Hero() {
                 </div>
             </div>
 
-            {/* Pass dark mode state as props */}
             <Service mode={dark} />
             <AboutUs mode={dark} />
             <BusinessHero mode={dark} />
