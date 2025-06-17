@@ -1,13 +1,13 @@
 import React, { useState } from "react";
 import { Nav } from "./Nav";
 import { Service } from "./Service";
-import AboutUs from "./AboutUs";
 import BusinessHero from "./Banner";
 import TeamSection from "./Team";
 import Testimonials from "./Testm";
 import VideoPresentation from "./VideoP";
 import NewsArticles from "./NewsArticles";
 import Footer from "./Footer";
+import AboutUs from "./AboutUs";
 
 export function Hero() {
     const [dark, setDark] = useState(false);
